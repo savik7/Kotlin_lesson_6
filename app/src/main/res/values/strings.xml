@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kotlin_lesson_6</string>
+    <string name="con">Привет мир</string>
+</resources>
