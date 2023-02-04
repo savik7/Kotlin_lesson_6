@@ -5,13 +5,14 @@ import android.os.Bundle
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    var textView: TextView? = null //Создаем переменную
+    //var textView: TextView? = null //Создаем переменную
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textView = findViewById(R.id.tvText) //Находим ее и присваиваем
+        //textView = findViewById(R.id.tvText) //Находим ее и присваиваем
+        var textView = findViewById<TextView>(R.id.tvText) // Создаем и срузу находим и присваиваем одной строчкой
         textView?.setText(getString(R.string.con)) //Выводим текст из стринг можно выводить только текст
     }
 }
